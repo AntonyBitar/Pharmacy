@@ -25,7 +25,7 @@ Public Class add_new_employe
                 Exit Sub
             End If
         Next
-
+        MsgBox("hello")
         con = SqlCommandManager.Instance
         Dim bati5 As String = "INSERT INTO Employe (Name_Employe, Email_employe,Password,Telephone_Employe)VALUES('" & txt_Name_Sign.Text & "','" & txt_Email_sign.Text & "','" & txt_Password_sign.Text & "','" & txt_phone_number.Text & "')"
         Dim cmd As New SqlCommand(bati5, con.sqlconnections)

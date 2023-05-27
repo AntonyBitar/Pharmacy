@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy.vbproj": {}
+    "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy\\Pharmacy.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy.vbproj": {
+    "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy\\Pharmacy.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy.vbproj",
+        "projectUniqueName": "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy\\Pharmacy.vbproj",
         "projectName": "Pharmacy",
-        "projectPath": "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy.vbproj",
+        "projectPath": "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy\\Pharmacy.vbproj",
         "packagesPath": "C:\\Users\\JOHNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\obj\\",
+        "outputPath": "C:\\Users\\JOHNI\\source\\repos\\Pharmacy\\Pharmacy\\Pharmacy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JOHNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
