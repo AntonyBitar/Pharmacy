@@ -50,13 +50,13 @@ Public Class Purchase
     End Sub
 
     Private Sub Purchase_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim query As String = "SELECT Name_Employe FROM Employe"
-        Using command As New SqlCommand(query, SqlCommandManager.Instance.sqlconnections)
-            Dim reader As SqlDataReader = command.ExecuteReader()
-            While reader.Read()
-                    ComboBox_Employe.Items.Add(reader("Name_Employe").ToString())
-                End While
-            End Using
+        'Dim query As String = "SELECT Name_Employe FROM Employe"
+        'Using command As New SqlCommand(query, SqlCommandManager.Instance.sqlconnections)
+        '    Dim reader As SqlDataReader = command.ExecuteReader()
+        '    While reader.Read()
+        '            ComboBox_Employe.Items.Add(reader("Name_Employe").ToString())
+        '        End While
+        '    End Using
 
 
     End Sub

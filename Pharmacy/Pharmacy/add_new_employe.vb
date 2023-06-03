@@ -4,7 +4,7 @@ Public Class add_new_employe
     Dim k As Integer = 0
     Dim b As Integer = 0
     Dim con As SqlCommandManager
-    Dim con1 As SqlDataSett
+    Dim con1 As SQLDataSetSI
     Public Sub But_Submit_Click(sender As Object, e As EventArgs) Handles But_Submit.Click
         If txt_Name_Sign.Text = "" Then
             MsgBox("Enter a valid Name")
@@ -25,6 +25,7 @@ Public Class add_new_employe
                 Exit Sub
             End If
         Next
+        MsgBox("hello")
         MsgBox("hello")
         con = SqlCommandManager.Instance
         Dim bati5 As String = "INSERT INTO Employe (Name_Employe, Email_employe,Password,Telephone_Employe)VALUES('" & txt_Name_Sign.Text & "','" & txt_Email_sign.Text & "','" & txt_Password_sign.Text & "','" & txt_phone_number.Text & "')"
