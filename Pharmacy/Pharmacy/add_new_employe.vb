@@ -26,13 +26,17 @@ Public Class add_new_employe
             End If
         Next
         MsgBox("hello")
-        MsgBox("hello")
-        con = SqlCommandManager.Instance
-        Dim bati5 As String = "INSERT INTO Employe (Name_Employe, Email_employe,Password,Telephone_Employe)VALUES('" & txt_Name_Sign.Text & "','" & txt_Email_sign.Text & "','" & txt_Password_sign.Text & "','" & txt_phone_number.Text & "')"
-        Dim cmd As New SqlCommand(bati5, con.sqlconnections)
-        cmd.ExecuteNonQuery()
-        MsgBox("Welcome To The Store")
-        Purchase.ShowDialog()
+        Dim new_row As DataRow = SqlCommandManager.Instance.sqldatasets.Tables("Employe").NewRow()
+        new_row("Name_Employe") = txt_Name_Sign.Text
+        new_row("Telephone_Employe") = txt_phone_number.Text
+        new_row("Email_employe") = txt_Email_sign.Text
+        new_row("Password") = txt_Password_sign.Text
+        SqlCommandManager.Instance.sqldatasets.Tables("Employe").Rows.Add(new_row)
+        SqlCommandManager.Instance.UpdateTable("Employe", opearation.Insert)
+
+
+
+
     End Sub
 
     Private Sub txt_phone_number_TextChanged(sender As Object, e As EventArgs) Handles txt_phone_number.TextChanged
@@ -80,8 +84,14 @@ Public Class add_new_employe
     End Sub
 
     Private Sub add_new_employe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        login.Hide()
-        Me.Show()
+        Owner.Hide()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        login.Show()
+
+
     End Sub
 End Class
 

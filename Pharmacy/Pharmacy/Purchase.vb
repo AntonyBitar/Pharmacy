@@ -61,6 +61,14 @@ Public Class Purchase
 
     End Sub
 
+    Private Sub Purchase_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        Owner.Hide()
+    End Sub
+
+    Private Sub Purchase_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Owner.Show()
+    End Sub
+
     'Dim query As String = "SELECT * FROM Product"
     'Dim queryy As New SqlCommand(query, antony)
     'Dim adapter As New SqlDataAdapter(queryy)
